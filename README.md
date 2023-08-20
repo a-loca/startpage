@@ -5,6 +5,8 @@ Dracula theme (forked):
 Kanagawa theme (custom made):
 ![Screenshot of Kanagawa Startpage](images/kanagawa-homepage.png)
 
+When I want to switch themes, I simply rename the HTML file I want to be my current theme to `index.html` and give the others different names, since Firefox is setup to always open `index.html` file as startup page.
+
 # Settings
 
 Press `s` to open settings.
@@ -29,8 +31,7 @@ var { classes: Cc, interfaces: Ci, utils: Cu } = Components;
 /* set new tab page */
 try {
   Cu.import("resource:///modules/AboutNewTab.jsm");
-  var newTabURL =
-    "file:///home/<username>/.mozilla/firefox/<profile>/startpage/index.html";
+  var newTabURL = "file:///home/<username>/.mozilla/firefox/<profile>/startpage/index.html";
   AboutNewTab.newTabURL = newTabURL;
 } catch (e) {
   Cu.reportError(e);
