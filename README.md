@@ -1,6 +1,9 @@
 # Startpage
 
-![Screenshot of Startpage](images/screenshot.png)
+Dracula theme (forked):
+![Screenshot of Dracula Startpage](images/dracula-homepage.png)
+Kanagawa theme (custom made):
+![Screenshot of Kanagawa Startpage](images/kanagawa-homepage.png)
 
 # Settings
 
