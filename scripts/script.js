@@ -61,7 +61,7 @@ if (localStorage.getItem("image")) {
   setImg("images/startpage.png");
 }
 
-search.focus();
+// search.focus();
 
 function isWebUrl(value) {
   try {
