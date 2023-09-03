@@ -2,33 +2,34 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "JetBrainsMono Nerd";
 }
 
 @font-face {
-  font-family: "Fira Code";
-  src: local("FiraCode Nerd Font"),
-    url("fonts/Fira Code Regular Nerd Font Complete.woff2"), local("monospace");
+  font-family: "JetBrainsMono Nerd";
+  src: local("JetBrainsMono Nerd Font"),
+    url("fonts/JetBrainsNerdFontMono-Regular.ttf") format("truetype"), local("monospace");
   font-display: swap;
 }
 
 :root {
-  --bg-color: #282a36;
-  --bg-dim-color: #303241;
-  --fg-color: #eee;
-  --search-input-color: #f8f8f2;
-  --search-btn-color: #6272a4;
-  --primary-color: #50fa7b;
-  --primary-dim-color: rgba(80, 250, 123, 0.7);
-  --secondary-color: rgb(189, 147, 249);
-  --secondary-dim-color: hsl(265 89% 70%);
-  --third-color: #44475a;
+  --bg-color: #2e3440;
+  --bg-dim-color: #2e3440;
+  --fg-color: #d8dee9;
+  --search-input-color: #d8dee9;
+  --search-btn-color: #a3be8c;
+  --primary-color: #81a1c1;
+  --primary-dim-color: #88c0d0;
+  --secondary-color: #a3be8c;
+  --secondary-dim-color: #d08770;
+  --third-color: #ebcb8b;
 }
 
 body {
   width: 100vw;
   height: 100vh;
   background-color: var(--bg-color);
-  font-family: "Fira Code", monospace;
+  font-family: "JetBrainsMono Nerd";
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,7 +41,6 @@ body {
   height: 340px;
   display: flex;
 }
-
 .img-holder {
   max-width: 15em;
   width: 40%;
@@ -49,7 +49,6 @@ body {
   overflow: hidden;
   position: relative;
 }
-
 .img-holder img {
   object-fit: cover;
   filter: blur(2px);
@@ -75,7 +74,7 @@ body {
 
 .searchbox input {
   font-size: 1rem;
-  font-family: "Fira Code", monospace;
+  font-family: "JetBrainsMono Nerd";
   width: 100%;
   padding: 0.7em;
   color: var(--search-input-color);
@@ -88,9 +87,9 @@ body {
   outline: 1px var(--secondary-color) solid;
 }
 
-.searchbox button {
+.searchbox #searchButton {
   font-size: 1rem;
-  font-family: "Fira Code", monospace;
+  font-family: "JetBrainsMono Nerd";
   padding: 0 1em;
   color: var(--search-btn-color);
   background-color: var(--bg-color);
@@ -140,7 +139,8 @@ body {
 
 .main a:hover::before,
 .main a:focus-visible::before {
-  content: "\0ea9c";
+  content: "";
+  font-family: "JetBrainMono Nerd";
   position: absolute;
   left: -0.75rem;
 }
@@ -199,7 +199,7 @@ dialog h2 {
 
 .input-field {
   font-size: 1rem;
-  font-family: "FiraCode", monospace;
+  font-family: "JetBrainsMono Nerd";
   padding: 0.7em;
   background-color: var(--bg-color);
   color: var(--search-input-color);
@@ -214,7 +214,7 @@ dialog h2 {
 .btn {
   padding: 0.3125em 0.9375em;
   font-size: 1.1em;
-  font-family: "FiraCode", monospace;
+  font-family: "JetBrainsMono Nerd";
   background-color: var(--bg-dim-color);
   color: var(--fg-color);
   cursor: pointer;
